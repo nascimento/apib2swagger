@@ -10,7 +10,7 @@ var apib2swagger = module.exports.convertParsed = function(apib) {
     swagger.swagger = '2.0';
     swagger.info = {
         'title': apib.name,
-        'version': '',
+        'version': apib.name,
         'description': apib.description
     }
     apib.metadata.forEach(function(meta) {
